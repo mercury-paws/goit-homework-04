@@ -1,0 +1,347 @@
+/*==================================COMMON STYLES================================== */
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  color: #434455;
+  width: 1440px;
+}
+
+h1 h2 h3 {
+  color: #2e2f42;
+}
+
+a {
+  text-decoration-line: none;
+  font-style: #434455;
+  font-style: normal;
+}
+
+a:hover,
+a:focus {
+  color: #404bbf;
+}
+
+li {
+  list-style-type: none;
+}
+.second-header {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  text-align: center;
+  color: #2e2f42;
+  margin-bottom: 72px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+img {
+  display: block;
+}
+/*================================== /COMMON STYLES================================== */
+
+/*==================================HEADER STYLES================================== */
+
+header {
+  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 332px;
+}
+
+.navigation-block {
+  display: flex;
+  align-items: center;
+}
+
+.logo-header {
+  color: #4d5ae5;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  margin-right: 76px;
+  padding: 24px 0;
+}
+.studio-class {
+  color: #2e2f42;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  gap: 40px;
+}
+.menu-navigation {
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  padding: 24px 0;
+}
+.menu-navigation-list {
+  padding: 24px 0;
+}
+.menu-navigation:hover,
+.menu-navigation:focus,
+.menu-navigation:active {
+  color: #404bbf;
+}
+
+.contact-us-list {
+  color: #434455;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 40px;
+  padding: 24px 0;
+}
+.address-styles {
+  color: #434455;
+}
+
+.contact-us {
+  color: #434455;
+  padding: 24px 0;
+}
+.contact-us:hover {
+  color: #404bbf;
+}
+
+/*================================== /HEADER STYLES================================== */
+
+/*==================================HERO STYLES================================== */
+.hero {
+  background-color: #2e2f42;
+  text-align: center;
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
+.main-header {
+  color: #ffffff;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 1.12px;
+  max-width: 496px;
+  text-align: center;
+  margin-bottom: 48px;
+  margin: 0 auto 48px auto;
+  display: block;
+}
+
+.button-style {
+  background-color: #4d5ae5;
+  display: block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+button:hover {
+  background-color: #404bbf;
+}
+
+button:focus {
+  background-color: #404bbf;
+}
+/*================================== /HERO STYLES================================== */
+
+/*==================================SECTION OUR SKILLS STYLES================================== */
+.our-skills {
+  background-color: #ffffff;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.list-of-our-skills {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 24px;
+}
+.list-of-out-skills-item {
+  border: 1px solid #000;
+  width: calc((100%-3 * 24px) / 4);
+}
+.third-header-skills {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.text-of-the-paragraphs-skills {
+  font-size: 16px;
+  width: 100%;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*================================== /SECTION OUR SKILLS STYLES================================== */
+
+/*================================== SECTION TWO OUR TEAM STYLES================================== */
+
+.section-two-our-team {
+  background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  align-items: center;
+}
+.list-of-our-team {
+  gap: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+.list-of-our-team-item {
+  background-color: #ffffff;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc((100%-3 * 24px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+.third-header-name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  color: #2e2f42;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.text-of-the-paragraphs-team {
+  font-size: 16px;
+  text-align: center;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.name-position {
+  width: 232px;
+  padding: 32px 0;
+}
+/*================================== /SECTION TWO OUR TEAM STYLES================================== */
+
+/*================================== SECTION THREE OUR PORTFOLIO STYLES================================== */
+.section-three-our-portfolio {
+  background-color: #ffffff;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.third-header-portfolio {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  color: #2e2f42;
+  margin-bottom: 8px;
+}
+.text-of-the-paragraphs-portfolio {
+  font-size: 16px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 24px;
+  row-gap: 48px;
+}
+.portfolio-list-item {
+  width: calc((100% - 48px) / 3);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+.application-category-info {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+/*================================== /SECTION THREE OUR PORTFOLIO STYLES================================== */
+
+/*================================== FOOTER STYLES================================== */
+.footer {
+  background-color: #2e2f42;
+  padding: 100px 0;
+}
+.footer-text {
+  color: #f4f4fd;
+  max-width: 264px;
+}
+.studio-footer {
+  color: #f4f4fd;
+}
+.text-of-the-paragraphs {
+  font-size: 16px;
+}
+
+.logo-footer {
+  color: #4d5ae5;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+/*================================== /FOOTER STYLES================================== */
