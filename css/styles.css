@@ -111,9 +111,23 @@ header {
   line-height: 1.5;
   letter-spacing: 0.32px;
   padding: 24px 0;
+  /* position: relative; */
+  
+}
+.menu-navigation:hover::after {
+  width: 100%;
+  height: 4px;
+  top: 24px;
+  /* right: 0; */
+  left: 0;
+  /* margin-top: 20px; */
+  position: absolute;
+  display: block;
+  content: "";
 }
 .menu-navigation-list {
   padding: 24px 0;
+  
 }
 .menu-navigation:hover,
 .menu-navigation:focus,
@@ -149,6 +163,15 @@ header {
   text-align: center;
   padding-top: 188px;
   padding-bottom: 188px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/hero-pic.jpg);
+  background-size: cover;
+  background-repeat: no repeat;
+  max-width: 1440px;
 }
 
 .main-header {
@@ -202,8 +225,8 @@ button:focus {
   align-items: stretch;
   gap: 24px;
 }
-.list-of-out-skills-item {
-  border: 1px solid #000;
+.list-of-our-skills-item {
+  /* border: 1px solid #000; */
   width: calc((100%-3 * 24px) / 4);
 }
 .third-header-skills {
@@ -231,6 +254,23 @@ button:focus {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.skills-icon-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  border: 1px solid #8e8f99;
+  background-color: #f4f4fd;
+  margin-bottom: 8px;
+}
+.icon-skills {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 /*================================== /SECTION OUR SKILLS STYLES================================== */
 
 /*================================== SECTION TWO OUR TEAM STYLES================================== */
@@ -254,6 +294,9 @@ button:focus {
   align-items: center;
   width: calc((100%-3 * 24px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .third-header-name {
   font-size: 20px;
@@ -267,6 +310,7 @@ button:focus {
 .text-of-the-paragraphs-team {
   font-size: 16px;
   text-align: center;
+  margin-bottom: 8px;
 }
 img {
   width: 100%;
@@ -277,6 +321,29 @@ img {
   width: 232px;
   padding: 32px 0;
 }
+.social-links-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.social-links-list .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+}
+.social-links-list .icon {
+  fill: #f4f4fd;
+}
+.social-links-list .link:hover {
+  background-color: #31d0aa;
+}
+
 /*================================== /SECTION TWO OUR TEAM STYLES================================== */
 
 /*================================== SECTION THREE OUR PORTFOLIO STYLES================================== */
@@ -309,6 +376,30 @@ img {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  padding: 40px 32px 40px 32px;
+  background-color: #4d5ae5;
+  color: #f4f4fd;
+  width: 296px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translatey(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.portfolio-list-item:hover .overlay {
+  transform: translate(0);
+}
+.portfolio-list-item:hover {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 .application-category-info {
   padding: 32px 16px;
@@ -321,6 +412,12 @@ img {
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
+}
+.container-footer {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 120px;
 }
 .footer-text {
   color: #f4f4fd;
@@ -344,4 +441,34 @@ img {
   margin-bottom: 16px;
   display: inline-block;
 }
+.media-text-footer {
+  margin-bottom: 16px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+}
+.social-links-list-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.social-links-list-footer .link:hover {
+  background-color: #31d0aa;
+}
+.social-links-list-footer .icon {
+  fill: #f4f4fd;
+}
+
+.social-links-list-footer .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+
 /*================================== /FOOTER STYLES================================== */
