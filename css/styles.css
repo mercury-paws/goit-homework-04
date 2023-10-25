@@ -376,10 +376,12 @@ img {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
+}
+.image-overlay{
   position: relative;
   overflow: hidden;
 }
-.overlay {
+.text-overlay {
   padding: 40px 32px 40px 32px;
   background-color: #4d5ae5;
   color: #f4f4fd;
@@ -393,7 +395,7 @@ img {
   transition: transform 250ms ease-in-out;
 }
 
-.portfolio-list-item:hover .overlay {
+.image-overlay:hover .text-overlay {
   transform: translate(0);
 }
 .portfolio-list-item:hover {
