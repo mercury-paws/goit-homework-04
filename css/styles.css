@@ -95,6 +95,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
   text-transform: uppercase;
   margin-right: 76px;
   padding: 24px 0;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .studio-class {
   color: #2e2f42;
